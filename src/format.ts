@@ -39,6 +39,12 @@ ${formatDetails(diffs, o)}
 
 </details>
 
+<mgmt>
+
+${formatDetails(diffs, o)}
+
+</mgmt>
+
 ${o.footer}`
 
 const generateShortComment = (diffs: Diff[], o: CommentOptions): string => `\
@@ -51,6 +57,12 @@ ${formatSummary(diffs)}
 ${formatShortDetails(diffs, o)}
 
 </details>
+
+<mgmt>
+
+${formatShortDetails(diffs, o)}
+
+</mgmt>
 
 See the full diff from ${o.workflowRunURL}
 
